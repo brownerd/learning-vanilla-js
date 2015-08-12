@@ -4,7 +4,8 @@ Nothing ground breaking here. I'm just trying to learn vanilla JS. This is a doc
 YES, these snippets are copies from elsewhere on the web. But they are in one place for me to use for references and grep until I can write this shit on my own.
 
 
-## Larger Resources
+## Other great  Resources
+- [YOU MIGHT NOT NEED JQUERY](http://youmightnotneedjquery.com/)
 - [Apollo](https://github.com/toddmotto/apollo)
 
 
