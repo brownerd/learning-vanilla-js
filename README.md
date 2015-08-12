@@ -1,4 +1,4 @@
-# Vanilla JS
+# I'm trying to learn Vanilla JS
 Nothing ground breaking here. I'm just trying to learn vanilla JS. This is a doc and repo of Vanilla JS code snippets to help me transition from being a shitty jQuery user to a more skilled JS dewd.
 
 YES, these snippets are copies from elsewhere on the web. But they are in one place for me to use for references and grep until I can write this shit on my own.
