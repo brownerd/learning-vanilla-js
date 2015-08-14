@@ -11,21 +11,18 @@ YES, these snippets are copies from elsewhere on the web. But they are in one pl
 
 ## Doc ready
 
-[Detect if a Document Has Loaded with JavaScript](http://davidwalsh.name/document-readystate)
+[jQuery $(document).ready() Equivalent in Vanilla JavaScript](http://beeker.io/jquery-document-ready-equivalent-vanilla-javascript)
 ```javascript
 
-// The basic check
-if(document.readyState === 'complete') {
-    // good to go!
-}
+var domReady = function(callback) {
+    document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
+};
 
-// Polling for the sake of my intern tests
-var interval = setInterval(function() {
-    if(document.readyState === 'complete') {
-        clearInterval(interval);
-        done();
-    }
-}, 100);
+//We can use this domReady() function just like the jQuery ready() function.
+
+domReady(function() {
+    // Your code here
+});
 
 ```
 
