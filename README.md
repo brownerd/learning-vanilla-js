@@ -190,10 +190,20 @@ alert(elem.hasClass('bar'));
 
 
 
-
+[A useful function for making querySelectorAll() more like jQuery](http://codepen.io/michaelschofield/snippets/a-useful-function-for-making-queryselectorall-more-like-jquery)
 ```javascript
 
+function $$(selector, context) {
+    context = context || document;
+    var elements = context.querySelectorAll(selector);
+    return Array.prototype.slice.call(elements);
+}
 
+//The array-like NodeList is turned into a regular array with slice.call( elements ) (MDN)), which can add convenience and otherwise mitigate some of the withdrawal we in Generation jQuery feel when iterating through the DOM.
+
+$$( '.pie' ).forEach( function( pie ) {
+  pie.classList.add( 'cream' );
+});
 
 ```
 
